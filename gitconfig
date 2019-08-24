@@ -1,7 +1,6 @@
 [user]
 	name = Yosef Kaner
 	email = ykaner12@gmail.com
-	signingkey = 849170083A98E9B3
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -25,3 +24,5 @@
 [commit]
 [gpg]
 	program = gpg
+[include]
+	path = /home/ykaner/.secret/gitconfig

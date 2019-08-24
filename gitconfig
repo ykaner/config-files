@@ -21,8 +21,11 @@
 	cim = commit -m
 	co = checkout
 	st = status --short
-[commit]
+# [commit]
+#     gpgsign = true
 [gpg]
 	program = gpg
 [include]
 	path = /home/ykaner/.secret/gitconfig
+[push]
+	default = simple

@@ -21,9 +21,11 @@ set autoread
 set incsearch  " Incremental search
 set ignorecase
 
+set backupcopy=yes  " Not break hard links
+
+
 " Mappings
 noremap Y y$
-
 
 " Insert newlines without entering insert mode. From the Vim wiki.
 map <s-cr> O<Esc> " Still dont work for me

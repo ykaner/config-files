@@ -1,0 +1,31 @@
+[user]
+	name = Yosef Kaner
+	email = ykaner12@gmail.com
+	signingkey = 849170083A98E9B3
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	autocrlf = true
+	safecrlf = false
+
+# .gitconfig file in your home folder
+[diff "pandoc"]
+  textconv=pandoc --to=markdown
+  prompt = false
+[alias]
+        wdiff = diff --word-diff=color --unified=1
+	l = log --oneline --graph
+	ci = commit
+	cim = commit -m
+	co = checkout
+	st = status --short
+[gui]
+[gui]
+	recentrepo = C:/Users/ykane/Documents/University/Deep Learning
+	recentrepo = C:/Users/ykane/Documents/SpaceNet
+[commit]
+[gpg]
+	program = gpg

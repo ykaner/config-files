@@ -15,12 +15,19 @@
   textconv=pandoc --to=markdown
   prompt = false
 [alias]
-        wdiff = diff --word-diff=color --unified=1
 	l = log --oneline --graph
+	la = log --oneline --graph --all
+    a = add
+    aa = add --all
 	ci = commit
 	cim = commit -m
 	co = checkout
+	cob = checkout -b
 	st = status --short
+    df = diff
+    wdf = diff --word-diff=color --unified=1
+    pl = pull
+    ps = push
 # [commit]
 #     gpgsign = true
 [gpg]

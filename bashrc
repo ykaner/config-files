@@ -6,9 +6,15 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 
+alias bashrc='source ~/.bashrc'
+
 alias ll='ls -l'
 alias lla='ll -a'
 alias l='ll'
 alias la='l -a'
 
+alias ..='cd ..'
 
+
+cd ~
+cowsay -f tux have a good pastens

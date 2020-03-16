@@ -7,13 +7,18 @@ export EDITOR="$VISUAL"
 
 
 alias bashrc='source ~/.bashrc'
+alias ebashrc='vim ~/.bashrc'
 
+alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lla='ll -a'
 alias l='ll'
 alias la='l -a'
 
 alias ..='cd ..'
+
+alias py='python'
+alias ipy='ipython'
 
 
 cd ~

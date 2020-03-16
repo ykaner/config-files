@@ -13,7 +13,6 @@ call plug#end()
 set bg=dark
 
 
-
 " General appearance
 set number
 set relativenumber
@@ -30,6 +29,8 @@ set smartcase
 " set spell
 
 set autoread
+
+set hlsearch
 
 set incsearch  " Incremental search
 set ignorecase
@@ -61,6 +62,7 @@ noremap gl :+tabmove<cr>
 noremap <leader>h :nohlsearch<cr>
 
 noremap zs :wa<cr>
+noremap ZA :wa<cr>:qa<cr>
 
 noremap <leader>r :e %<cr>
 

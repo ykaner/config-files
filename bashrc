@@ -5,9 +5,9 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-
-alias bashrc='source ~/.bashrc'
-alias ebashrc='vim ~/.bashrc'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
@@ -20,6 +20,15 @@ alias ..='cd ..'
 alias py='python'
 alias ipy='ipython'
 
+alias rmit='rm -rf !$'
 
-cd ~
+WINHOME='/mnt/c/users/ykane'
+
+alias bashrc='source ~/.bashrc'
+alias ebashrc='vim ~/.bashrc'
+
+alias pasten='echo pasten'
+
+
+# cd ~
 cowsay -f tux have a good pastens

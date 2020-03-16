@@ -1,17 +1,13 @@
 
-call plug#begin('~/.vim/plugged')
+call plug#begin()
+" Remember to run dos2unix on some files if they downloaded as windows files
 
 Plug 'altercation/vim-colors-solarized'
 
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" Plug 'junegunn/fzf.vim'
-
-" Plug 'preservim/nerdcommenter'
+Plug 'junegunn/fzf', { 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
-
-set bg=dark
-
 
 " General appearance
 set number
@@ -23,10 +19,19 @@ set smarttab
 set tabstop=4
 set shiftwidth=4
 
-syntax on
-
 set smartcase
 " set spell
+
+" colorscheme
+let g:solarized_termcolors=256
+set bg=dark
+colorscheme solarized
+
+syntax on
+
+" Set the curssor to block
+let &t_SI.="\e[5 q"
+let &t_te.="\e[0 q"
 
 set autoread
 
@@ -36,6 +41,13 @@ set incsearch  " Incremental search
 set ignorecase
 
 set backupcopy=yes  " Not break hard links
+
+" FZF
+nnoremap ,f :Files<CR>
+nnoremap ,g :GFiles<CR>
+nnoremap ,b :Buffers<CR>
+nnoremap ,m :Marks<CR>
+nnoremap ,a :Ag<CR>
 
 
 " Mappings

@@ -15,8 +15,9 @@
   textconv=pandoc --to=markdown
   prompt = false
 [alias]
-	l = log --oneline --graph
-	la = log --oneline --graph --all
+    merge = merge --no-ff
+	l = log --oneline --graph --decorate
+	la = log --oneline --graph --decorate --all
     a = add
     aa = add --all
 	ci = commit

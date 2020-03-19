@@ -20,16 +20,16 @@ alias la='l -a'
 
 alias ..='cd ..'
 
-alias py='python'
+alias py='python3'
 alias ipy='ipython'
 alias gt='git'
 
-alias pleas='sudo !!'
+alias please='sudo $(history -p \!\!)'
 
-alias gitignore='~/.globals/gitignore/gitignore.sh'
+alias gitignore='~/.globals/gitignore.sh'
 
-alias rmit='rm -rf !$'
-alias cdit='cd -rf !$'
+alias rmit='rm -rf $(history -p \!\$)'
+alias cdit='cd $(history -p \!\$)'
 
 WINHOME='/mnt/c/users/ykane'
 
@@ -39,5 +39,5 @@ alias ebashrc='vim ~/.bashrc'
 
 alias pasten='echo pasten'
 
-# cd ~
+cd ~
 cowsay -f tux have a good pastens

@@ -33,8 +33,8 @@ alias please='sudo $(history -p \!\!)'
 
 alias gitignore='~/.globals/gitignore.sh'
 
-alias rmit='rm -rf $(history -p \!\$)'
-alias cdit='cd $(history -p \!\$)'
+alias rmit='rm -rf $_'
+alias cdit='cd $_'
 alias vimit='vim $_'
 
 WINHOME='/mnt/c/users/ykane'

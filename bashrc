@@ -21,7 +21,12 @@ alias la='l -a'
 alias ..='cd ..'
 
 alias py='python3'
+alias py2='python2'
+alias py3='python3'
 alias ipy='ipython'
+alias pip='py -m pip'
+alias pip2='python2 -m pip'
+alias pip3='python3 -m pip'
 alias gt='git'
 
 alias please='sudo $(history -p \!\!)'
@@ -30,6 +35,7 @@ alias gitignore='~/.globals/gitignore.sh'
 
 alias rmit='rm -rf $(history -p \!\$)'
 alias cdit='cd $(history -p \!\$)'
+alias vimit='vim $_'
 
 WINHOME='/mnt/c/users/ykane'
 
@@ -39,5 +45,9 @@ alias ebashrc='vim ~/.bashrc'
 
 alias pasten='echo pasten'
 
-cd ~
-cowsay -f tux have a good pastens
+# Do it only when opening a new bash, not when loading it with bashrc
+if  [ ! $YK_BASH_RC ] ;then
+    cd ~
+    cowsay -f tux have a good pastens
+fi 
+YK_BASH_RC=1

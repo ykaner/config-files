@@ -33,6 +33,8 @@ alias please='sudo $(history -p \!\!)'
 
 alias gitignore='~/.globals/gitignore.sh'
 
+alias history='history | less'
+
 alias rmit='rm -rf $_'
 alias cdit='cd $_'
 alias vimit='vim $_'

@@ -22,6 +22,9 @@ set shiftwidth=4
 set smartcase
 " set spell
 
+set textwidth=80
+set colorcolumn=+1
+
 " colorscheme
 let g:solarized_termcolors=256
 set bg=dark

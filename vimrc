@@ -74,6 +74,20 @@ noremap gk :tabn<cr>
 noremap gh :-tabmove<cr>
 noremap gl :+tabmove<cr>
 
+noremap g0 :tabfirst<cr>
+noremap g^ :tabfirst<cr>
+noremap g9 :tablast<cr>
+noremap g$ :tablast<cr>
+
+noremap g1 :tabfirst<cr>
+noremap g2 :tabfirst<cr>:tabn<cr>
+noremap g3 :tabfirst<cr>:tabn<cr>:tabn<cr>
+noremap g4 :tabfirst<cr>:tabn<cr>:tabn<cr>:tabn<cr>
+noremap g5 :tabfirst<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>
+noremap g6 :tabfirst<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>
+noremap g7 :tabfirst<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>
+noremap g8 :tabfirst<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>:tabn<cr>
+
 noremap <leader>h :nohlsearch<cr>
 
 noremap zs :wa<cr>

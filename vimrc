@@ -95,6 +95,8 @@ noremap ZA :wa<cr>:qa<cr>
 
 noremap <leader>r :e %<cr>
 
+noremap s @
+
 command Vimrc :source ~/.vimrc
 noremap <leader>sv :source $MYVIMRC<cr>
 noremap <leader>ev :tabe $MYVIMRC<cr>

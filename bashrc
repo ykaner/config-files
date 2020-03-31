@@ -35,6 +35,12 @@ alias gitignore='~/.globals/gitignore.sh'
 
 alias history='history | less'
 
+old(){
+    for f_name in $@; do
+        mv $f_name{,.old}
+    done
+}
+
 alias rmit='rm -rf $_'
 alias cdit='cd $_'
 alias vimit='vim $_'

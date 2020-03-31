@@ -26,8 +26,9 @@ set textwidth=80
 set colorcolumn=+1
 
 " colorscheme
-let g:solarized_termcolors=256
 set bg=dark
+set t_Co=256
+let g:solarized_termcolors=256
 colorscheme solarized
 
 syntax on
@@ -93,7 +94,7 @@ noremap <leader>r :e %<cr>
 
 noremap s @
 
-command Vimrc :source ~/.vimrc
+command! Vimrc :source ~/.vimrc
 noremap <leader>sv :source $MYVIMRC<cr>
 noremap <leader>ev :tabe $MYVIMRC<cr>
 

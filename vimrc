@@ -32,10 +32,6 @@ colorscheme solarized
 
 syntax on
 
-" Set the curssor to block
-let &t_SI.="\e[5 q"
-let &t_te.="\e[0 q"
-
 set autoread
 
 set hlsearch

@@ -24,6 +24,7 @@
 	cim = commit -m
 	co = checkout
 	cob = checkout -b
+    b = branch
 	st = status --short
     df = diff
     wdf = diff --word-diff=color --unified=1

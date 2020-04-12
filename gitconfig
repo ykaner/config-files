@@ -20,6 +20,7 @@
 	la = log --oneline --graph --decorate --all
     a = add
     aa = add --all
+    au = add -u
 	ci = commit
 	cim = commit -m
 	co = checkout

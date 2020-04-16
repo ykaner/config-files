@@ -45,6 +45,10 @@ alias gitignore='~/.globals/gitignore.sh'
 
 alias history='history | less'
 
+len(){
+    echo -n $@ | wc -m
+}
+
 old(){
     for f_name in $@; do
         mv $f_name{,.old}

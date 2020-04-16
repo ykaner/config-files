@@ -1,4 +1,14 @@
 
+# Auto tmux
+if command -v tmux &> /dev/null &&
+    [ -n "$PS1" ] &&
+    [[ ! "$TERM" =~ screen ]] &&
+    [[ ! "$TERM" =~ tmux ]] &&
+    [ -z "$TMUX" ]; then
+    exec tmux
+fi
+
+
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 
@@ -55,7 +65,6 @@ alias pasten='echo pasten'
 
 # Do it only when opening a new bash, not when loading it with bashrc
 if  [ ! $YK_BASH_RC ] ;then
-    cd ~
     cowsay -f tux have a good pastens
 fi 
 YK_BASH_RC=1

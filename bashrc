@@ -11,6 +11,12 @@
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
+# History settings
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+shopt -s histappend
+export HISTCONTROL=ignorespace:ignoredups
+
 
 # vim!!
 export VISUAL=vim

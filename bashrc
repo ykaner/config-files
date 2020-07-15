@@ -1,12 +1,12 @@
 
 # Auto tmux
-if command -v tmux &> /dev/null &&
-    [ -n "$PS1" ] &&
-    [[ ! "$TERM" =~ screen ]] &&
-    [[ ! "$TERM" =~ tmux ]] &&
-    [ -z "$TMUX" ]; then
-    exec tmux
-fi
+# if command -v tmux &> /dev/null &&
+#     [ -n "$PS1" ] &&
+#     [[ ! "$TERM" =~ screen ]] &&
+#     [[ ! "$TERM" =~ tmux ]] &&
+#     [ -z "$TMUX" ]; then
+#     exec tmux
+# fi
 
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '

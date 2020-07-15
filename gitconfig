@@ -21,6 +21,7 @@
     a = add
     aa = add --all
     au = add -u
+    ap = add -p
 	ci = commit
 	cim = commit -m
 	co = checkout

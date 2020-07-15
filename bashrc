@@ -61,6 +61,11 @@ old(){
     done
 }
 
+helpless(){
+    $1 --help | less
+}
+alias helpls='helpless'
+
 alias rmit='rm -rf $_'
 alias cdit='cd $_'
 alias vimit='vim $_'

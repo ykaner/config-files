@@ -71,6 +71,9 @@ noremap gk :tabn<cr>
 noremap gh :-tabmove<cr>
 noremap gl :+tabmove<cr>
 
+" duplicate
+noremap gd :tabe %<cr>
+
 noremap g0 :tabfirst<cr>
 noremap g^ :tabfirst<cr>
 noremap g9 :tablast<cr>
@@ -89,6 +92,9 @@ noremap <leader>h :nohlsearch<cr>
 
 noremap zs :wa<cr>
 noremap ZA :wa<cr>:qa<cr>
+noremap zx :q!<cr>
+
+noremap <c-t> :tabe 
 
 noremap <leader>r :e %<cr>
 

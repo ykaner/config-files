@@ -45,6 +45,8 @@ alias pip2='python2 -m pip'
 alias pip3='python3 -m pip'
 alias gt='git'
 
+alias make='make -j $(nproc --all)'
+
 alias please='sudo $(history -p \!\!)'
 
 alias gitignore='~/.globals/gitignore.sh'

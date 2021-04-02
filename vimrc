@@ -73,6 +73,7 @@ noremap gl :+tabmove<cr>
 
 " duplicate
 noremap gd :tabe %<cr>
+noremap gu :e %:h<cr>
 
 noremap g0 :tabfirst<cr>
 noremap g^ :tabfirst<cr>

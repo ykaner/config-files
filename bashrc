@@ -44,6 +44,7 @@ alias pip='py -m pip'
 alias pip2='python2 -m pip'
 alias pip3='python3 -m pip'
 alias gt='git'
+alias gap='git add -p'
 
 alias make='make -j $(nproc --all)'
 
@@ -76,7 +77,6 @@ WINHOME='/mnt/c/users/ykane'
 
 alias bashrc='source ~/.bashrc'
 alias ebashrc='vim ~/.bashrc'
-
 
 alias pasten='echo pasten'
 

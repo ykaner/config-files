@@ -78,10 +78,10 @@ WINHOME='/mnt/c/users/ykane'
 alias bashrc='source ~/.bashrc'
 alias ebashrc='vim ~/.bashrc'
 
-alias pasten='echo pasten'
+alias pasten='echo pasten | lolcat'
 
 # Do it only when opening a new bash, not when loading it with bashrc
 if  [ ! $YK_BASH_RC ] ;then
-    cowsay -f tux have a good pastens
+  figlet have a good pasten | cowsay -n -f tux | lolcat
 fi 
 YK_BASH_RC=1

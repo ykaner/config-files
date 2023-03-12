@@ -74,6 +74,7 @@ noremap gl :+tabmove<cr>
 " duplicate
 noremap gd :tabe %<cr>
 noremap gu :e %:h<cr>
+noremap gv :vsplit %<cr><C-w>l
 
 noremap g0 :tabfirst<cr>
 noremap g^ :tabfirst<cr>

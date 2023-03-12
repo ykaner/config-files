@@ -33,6 +33,7 @@ alias ll='ls -l'
 alias lla='ll -a'
 alias l='ll'
 alias la='l -a'
+alias lah='l -ah'
 
 alias ..='cd ..'
 
@@ -73,6 +74,7 @@ alias rmit='rm -rf $_'
 alias cdit='cd $_'
 alias vimit='vim $_'
 
+LINHOME=$HOME
 WINHOME='/mnt/c/users/ykane'
 
 alias bashrc='source ~/.bashrc'

@@ -36,6 +36,11 @@ alias la='l -a'
 alias lah='l -ah'
 
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias .......='cd ../../../../../..'
 
 alias py='python3'
 alias py2='python2'

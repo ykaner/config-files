@@ -40,3 +40,5 @@
 	path = /home/ykaner/.secret/gitconfig
 [push]
 	default = simple
+[pull]
+    ff = only

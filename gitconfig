@@ -32,6 +32,8 @@
     wdf = diff --word-diff=color --unified=1
     pl = pull
     ps = push
+[init]
+    defaultBranch = master
 # [commit]
 #     gpgsign = true
 [gpg]

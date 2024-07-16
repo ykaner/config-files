@@ -42,6 +42,7 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 
+alias python='python3'
 alias py='python3'
 alias py2='python2'
 alias py3='python3'
